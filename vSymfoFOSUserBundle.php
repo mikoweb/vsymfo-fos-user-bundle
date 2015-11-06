@@ -26,7 +26,7 @@ class vSymfoFOSUserBundle extends Bundle
      */
     public function getContainerExtension()
     {
-        if (null === $this->extension) {
+        if (is_null($this->extension)) {
             $this->extension = new vSymfoFOSUserBundleExtension();
         }
 
